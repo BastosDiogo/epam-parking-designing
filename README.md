@@ -7,8 +7,8 @@ Design and implement a parking lot management system in Python. The system will 
 
 1-) Parking Rules:
 
-A Motorbike can park in either Compact or Regular spots
+* A Motorbike can park in either Compact or Regular spots
 
-A Car can only park in Regular spots
+* A Car can only park in Regular spots
 
-When parking, place vehicles in the first available valid spot with the lowest ID
+* When parking, place vehicles in the first available valid spot with the lowest ID

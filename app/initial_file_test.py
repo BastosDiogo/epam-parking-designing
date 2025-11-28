@@ -2,9 +2,9 @@ from abc import ABC, abstractmethod
 
 class Vehicle(ABC):
     """Base class for all vehicles"""
-    def __init__(self, compact:int, sport:int=0):
+    def __init__(self, compact:bool, regular:bool):
         self.compact = compact
-        self.sport = sport
+        self.regular = regular
 
 
 class ParkingSpot:
@@ -34,9 +34,9 @@ class ParkingLot:
 
 
 class Motorbike():
-    def __init__(self, compact:int, sport:int):
+    def __init__(self, compact:int, regular:int):
         self.compact = compact
-        self.sport = sport
+        self.regular = regular
 
 
 class Car():

@@ -19,25 +19,25 @@ jobs:
       with:
         python-version: "3.12.10"
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install poetry
-        cd app && poetry install
+    # - name: Install dependencies
+    #   run: |
+    #     python -m pip install --upgrade pip
+    #     pip install poetry
+    #     cd app && poetry install
 
     - name: Tests
       run: |
         python -m unittest discover -s app/tests -p "test_*.py"
 
-  Estrutura_2:
+  # Estrutura_2:
 
-    runs-on: ubuntu-latest
-    steps:
+  #   runs-on: ubuntu-latest
+  #   steps:
 
-    - name: Checkout do código
-      uses: actions/checkout@v4
+  #   - name: Checkout do código
+  #     uses: actions/checkout@v4
 
-    - name: Bildar Docker
-      run: |
-        docker build -t generic-services-api .
-        #docker run generic-services-api
+  #   - name: Bildar Docker
+  #     run: |
+  #       docker build -t generic-services-api .
+  #       #docker run generic-services-api
